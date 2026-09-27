@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ambati Ishwarya | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #334155;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        .about,
+        .education {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .project h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            color: #cbd5e1;
+        }
+
+        .education-box {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .certifications {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .certifications p {
+            background: #1e293b;
+            margin-bottom: 15px;
+            padding: 18px;
+            border-radius: 8px;
+            color: #cbd5e1;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            color: #cbd5e1;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Ishwarya</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Hi, I'm <span>Ambati Ishwarya</span></h1>
+        <h2>B.Tech CSE (AI&ML) Student</h2>
+
+        <p>
+            I am a Computer Science and Engineering student passionate about
+            technology, software development, and learning new skills.
+            I enjoy building practical projects and solving problems through technology.
+        </p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            I am currently pursuing my Bachelor of Technology in Computer Science
+            and Engineering (AI&ML) at CMR Engineering College, Hyderabad.
+            I am interested in applying my technical knowledge, developing new
+            skills, and contributing to real-world projects.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">C</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Object-Oriented Programming</div>
+        <div class="skill">VS Code</div>
+        <div class="skill">Excel</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Explainable AI-Based Procrastination Detection System</h3>
+            <p>
+                Developed a real-time user activity monitoring system to detect
+                procrastination behaviour. Implemented rule-based classification
+                to categorize activities into focused and distracted states and
+                integrated Explainable AI concepts to generate human-readable
+                productivity insights.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Handicraft Store Website</h3>
+            <p>
+                Built a responsive multi-section handicraft website using HTML,
+                CSS and JavaScript. Designed product listings and order forms
+                with a focus on clean layout, usability and responsive design.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Hospital Management System</h3>
+            <p>
+                Developed a Java-based hospital management system with patient,
+                doctor and appointment modules. Implemented JDBC database
+                connectivity for CRUD operations and used object-oriented
+                programming with exception handling.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="education">
+        <div class="education-box">
+            <h3>Bachelor of Technology</h3>
+            <p>Computer Science and Engineering (AI&ML)</p>
+            <p>CMR Engineering College, Hyderabad</p>
+            <p>2023 - 2027</p>
+            <p><strong>CGPA: 8.72</strong></p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Certifications & Achievements</h2>
+
+    <div class="certifications">
+        <p>Agentforce Specialist Certification - Salesforce</p>
+        <p>Google Cloud Career Launchpad - Generative AI Leader Track</p>
+        <p>Attended a technical session on introductory cybersecurity concepts</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact">
+        <p>Email:
+            <a href="mailto:ambatiishwarya07@gmail.com">
+                ambatiishwarya07@gmail.com
+            </a>
+        </p>
+
+        <p>Phone: 9505710936</p>
+
+        <p>Location: Hyderabad, Telangana</p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/" target="_blank">
+                ISHWARYA_02
+            </a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Ambati Ishwarya. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
